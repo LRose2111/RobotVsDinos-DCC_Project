@@ -3,7 +3,7 @@ from weapon import Weapon
 class Robot:
     def __init__(self, name):
         self.name = name
-        self.health = None
+        self.health = 225
         self.robotweapon = None
 
     def bot_weapon(self):
@@ -22,6 +22,7 @@ class Robot:
                 return user_input
 
     def robot_attack(self, dino):
+        dino.health -= 25
         print(f'{self.name} attacks {dino.name} with a {self.bot_weapon}')   
 
         

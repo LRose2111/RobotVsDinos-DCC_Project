@@ -4,6 +4,5 @@ class Dinosaur:
         self.dinosaur_health = 100
         self.attackpower = attackpwr
 
-    def dino_attack(self, robo):
-        robo.health -= 50
-        print(f'{self.dinosaur_name} attacks {robo.name} with his chompers!')
+    def dino_attack(self):
+        print(f'{self.dinosaur_name} attacks CY with his chompers!')

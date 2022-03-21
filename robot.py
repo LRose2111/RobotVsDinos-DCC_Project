@@ -21,8 +21,7 @@ class Robot:
             else:
                 return user_input
 
-    def robot_attack(self, dino):
-        dino.health -= 25
-        print(f'{self.name} attacks {dino.name} with a {self.bot_weapon}')   
+    def robot_attack(self):
+        print(f'{self.name} attacks Rex with a {self.bot_weapon}')   
 
         

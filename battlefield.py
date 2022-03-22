@@ -1,7 +1,6 @@
 from fleet import Fleet
 from herd import Herd
-from dinosaur import Dinosaur
-from robot import Robot
+
 
 
 class Battlefield:
@@ -20,23 +19,27 @@ class Battlefield:
     def welcome(self):  
         print('Welcome to the 1st Annual Time Battle! Robots VS Dinosaurs! Enjoy!')
     def welcome_bots(self):
-        print(f'Welcome {robo1} and {Fleet.robo2} to the Battefield!') 
+        print(f'In the left corner we have the Robots!') 
     def welcome_dino(self):
-        print(f'Welcome {Herd.dinosaur1} and {Herd.dinosaur2} to the Battefield!')
+        print(f'In the right corner we have the Dinosaurs!')
     def dino_turn(self):
-        self.dinogo = Dinosaur.dino_attack
-        print(self.dinogo)
+        print('wow, the first strike goes to the Dinosaurs!')
+        print(self.herd.dino_attack())
+
     def robo_turn(self):
-        self.botgo = robot_attack
-        print(self.botgo)
-    def the_winner(self):
-        if self.herd.dinosaurs == 0:
-            print('The robots have won!')
-        elif self.fleet.robots == 0:
-            print('The Dinosaurs have won!')
-        else:
-            print('Wow, its a draw!')
+        print('The robots strike back!')
+        print (self.fleet.robot_attack())
         
+    def the_winner(self):
+        user_input = input(f'Did you enjoy that epic show down!?'  )
+        print('Lets see who the winners are.')
+        print('Despite the overwhelming size diffence the Dinosaurs had, the Robots proved that the future is overpowered!')
+        print('Robots Win!!!!!!!!!!!!!')
+        print('Thank you for attending the 1ST ever Time Battle! We will see you next year!')
+            
+        
+        
+
         
        
     

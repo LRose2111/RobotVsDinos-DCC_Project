@@ -10,7 +10,4 @@ class Robot:
         self.weapon = Weapon
 
        
-    def robot_attack(self, dinosaur):
-        dinosaur.health = dinosaur.health - self.weapon.attackpwr 
-        print(dinosaur.health)
-    
+ 
